@@ -15,25 +15,39 @@
       <div class="col-md-6 offset-md-3">
         <h1 class='display-4 text-center mb-3'>Weigth Converter</h1>
         <form class='form-group'>
-          <input type="number" class='form-control form-control-lg' id='lbsInput' placeholder="Enter Pounds">
+          <input type="number" class='form-control form-control-lg mb-3' id='lbsInput'  min=0 placeholder="Enter Number to Convert......." >
+          <label class='h5'>Choose a unit:</label>
+          <select name="units" id="units" class='form-control form-control-lg'>
+            <option value="">Select a unit</option>
+            <option value="lbs">lbs</option>
+            <option value="kg">Kg</option>
+            <option value="grams">Grams</option>
+            <option value="ounces">Oz</option>
+          </select>          
         </form>
         <div id='output'>
-          <div class="card bg-success mb-2">
+          <div class="card bg-success mb-2" id="grams">
             <div class='card-body'>
               <h4>Grams:</h4>
               <div id="gramsOutputs"></div>
             </div>
           </div>
-          <div class="card bg-danger mb-2">
+          <div class="card bg-danger mb-2" id="kilo">
             <div class='card-body'>
               <h4>Kilogram:</h4>
               <div id="kgOutputs" ></div>
             </div>
           </div>
-          <div class="card bg-primary mb-2">
+          <div class="card bg-primary mb-2" id="oz">
             <div class='card-body'>
               <h4>Ounces:</h4>
               <div id="ozOutputs"></div>
+            </div>
+          </div>
+          <div class="card bg-light mb-4" id="pounds">
+            <div class='card-body text-dark''>
+              <h4>Pounds:</h4>
+              <div id="lbs"></div>
             </div>
           </div>              
         </div>        
