@@ -1,2 +1,2 @@
 # Javascript-Projects
-A collection of JavaScript projects
+A collection of JavaScript projects I built 
